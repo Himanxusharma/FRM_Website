@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shivalik FRM</title>
   </head>
@@ -15,8 +17,8 @@
     {% csrf_token %}
     <h3>Dear Cosutumer ,</h3>
     <h2>
-      The geneated score for your this payment of Amount {{ Amt }} to the
-      Account {{ Pacc }} is
+      The geneated score for your this payment of Amount {{ form.Amt }} to the
+      Account {{ form.Pacc }} is
     </h2>
     <h3>%d .</h3>
 

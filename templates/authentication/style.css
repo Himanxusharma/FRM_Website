@@ -1,6 +1,7 @@
-body 
-
-{
-    background-color: lightblue;
-    background: red;
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: red;
+    background: aqua;
 }
