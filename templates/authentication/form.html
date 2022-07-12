@@ -12,9 +12,9 @@
 <body>
     <h3 style="text-align:center;font-size: larger;">Welcome to FRM by Interns! </h3>
     <form action="verify" >
-     Account Number : <input type="number" name="Acc" required> <br><br>
-     Amount : <input type="number" name="Amt" required> <br><br>
-     Payee Account Number : <input type="number" name="Pacc" required> <br><br>
+     Account Number : <input type="text" name="Acc" pattern="[0-9]{10,12}" required onpaste="return false";> <br><br>
+     Amount : <input type="number" name="Amt" min="1" required onpaste="return false";> <br><br>
+     Payee Account Number : <input type="number" name="Pacc"  pattern="[0-9]{10,12}" required onpaste="return false";> <br><br>
      <input type="submit">
 
      </form>
