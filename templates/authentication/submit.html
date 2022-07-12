@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shivalik FRM</title>
   </head>
   <body>
-    <h3>
-      Here we get the score!!!<br>
-      Congrats you're score is ......
-    </h3>
+    {% block content %} 
+    <h3> Account Number : {{Acc}} <br />
+    Amount : {{ Amt }} <br />
+    Payee Account Number : {{Pacc}} <br /></h3>
 
-    {% csrf_token %}
     <h3>Dear Cosutumer ,</h3>
     <h2>
-      The geneated score for your this payment of Amount {{ form.Amt }} to the
-      Account {{ form.Pacc }} is
+      The geneated score for your this payment of Amount to the Account is
     </h2>
     <h3>%d .</h3>
+
+    {% endblock %}
 
     <p>Score>900 - May be Fraud. otherwise you may safe.</p>
   </body>
